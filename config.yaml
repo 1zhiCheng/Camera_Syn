@@ -1,0 +1,14 @@
+# config.yaml
+
+ir_camera:
+  communication:
+    interface: "serial"        # 接口类型："serial", "usb", "ethernet"
+    port: "COM3"               # 串行端口，如"COM3"; USB设备URL; 以太网IP
+    baudrate: 115200           # 串行通信波特率
+  commands:
+    set_brightness: "SET_BRIGHTNESS:50"
+    set_contrast: "SET_CONTRAST:50"
+    set_saturation: "SET_SATURATION:50"
+    set_gain: "SET_GAIN:50"
+    set_exposure: "SET_EXPOSURE:50"
+  trigger_interval: 10          # 触发命令的时间间隔（秒）
